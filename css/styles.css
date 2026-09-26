@@ -419,6 +419,7 @@ a.site-logo {
     .hero-container {
         flex-direction: row;
         align-items: center;
+        padding: 120px 0;
     }
 
     .hero-container>div:first-child {
