@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Elaine Blum is a therapist who specializes in neurodiversity (especially ADHD and autism) and queer identities, based in Ann Arbor/Ypsilanti.">
+
+    <title>Elaine Blum | Neurodiversity &amp; Queer-Affirming Therapist | Ann Arbor</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link
+        href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="site-logo" href="index.html">Elaine Blum, LLMSW, PhD</a>
+            <nav class="main-nav">
+                <input type="checkbox" id="checkbox-toggle">
+                <label for="checkbox-toggle" class="menu-btn"><span class="sr-only">Open navigation menu</span></label>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div>
+                    <img src="images/Headshot2.jpg">
+                </div>
+                <div>
+                    <h1>Neurodiversity &amp; Queer-Affirming Therapy</h1>
+                    <h2>I want to learn your voice, your language, and help you amplify it.</h2>
+                    <a class="secondary-button" href="#about">Learn More</a>
+                    <a class="primary-button" href="#contact">Request a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <div>
+                <img clas="about-image" src="images/Elaine1.jpg">
+                <h2>Hi, I'm Elaine.</h2>
+                <p>I know how discouraging navigating mental health can be! Have you ever been told to not overthink
+                    things? Or that you intellectualize too much? Instead of framing those as barriers, I create space
+                    for engaging that thinking and leveraging it towards what you value. I want to learn your voice,
+                    your language, and help you amplify it.</p>
+                <p>My central commitment is to the LGBTQIA2S+ community. I specialize with intersections of queer and
+                    neurodiverse (autism, ADHD, etc.) identities. I also enjoy working with individuals on stress
+                    related to higher education (college, grad school). I help clients think through: anxiety and/or
+                    depression; clarifying/questioning identities such as gender and/or sexuality; academic stress
+                    (including graduate work!); navigating transitions; healing from religious trauma; and more.</p>
+                <p>In addition to a Masters of Social Work, I have a PhD in Philosophy with a focus on gender, queer
+                    theory, and trans theory. This means that I have a lot of conceptual tools at your disposal for
+                    engaging questions of identity, intersectionality, and how to negotiate conflicting social
+                    expectations and demands.</p>
+                <p>In my free time, I like to play board games (especially cooperative ones!), do crossword puzzles, and
+                    crochet.</p>
+            </div>
+        </section>
+
+        <section id="help">
+            <div class="container">
+                <h2>What would sessions with me be like?</h2>
+                <p>I find questioning with curiosity helpful in gaining deeper
+                    understanding into the meaning and reasoning behind our thoughts. Otherwise, I like to tailor my
+                    treatment approach to what you find edifying and practicable! I eclectically meld parts work,
+                    narrative therapy, queer/trans theory, feminist theory, and more. My goal is to be a resource for
+                    you, to help you celebrate the strengths and tools already within you, and to form a collaborative
+                    relationship to build upon them with you. I want to help you build confidence in your own voice!
+                    Bring all of you!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Ready to see if we're a good fit?</h2>
+                <p>Fill out this short form, and I'll reach out within 48 business hours to schedule your free
+                    consultation!
+                </p>
+                <div id="my-form"></div>
+                <script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        StaticForms.render(
+                            document.getElementById('my-form'),
+                            'sf_480914b7f1f297e44444f671'
+                        );
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
