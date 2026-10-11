@@ -177,7 +177,7 @@ a:active {
 .secondary-button {
     background-color: var(--button-sec);
     color: var(--text);
-    border: 2px solid var(--button);
+    border: 2px solid var(--button-sec);
 }
 
 .secondary-button:visited {
@@ -331,8 +331,23 @@ a.site-logo {
 
 /* Main Content */
 
+.hero-band {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: var(--button);
+    color: var(--text);
+    text-align: center;
+    font-size: 86%;
+}
+
 .hero {
     background-color: var(--button-sec);
+    background-image: url('../images/YellowBackground3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: var(--text);
     text-align: center;
 }
