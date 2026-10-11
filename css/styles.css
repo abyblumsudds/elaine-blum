@@ -41,6 +41,8 @@ body {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 img {
@@ -113,20 +115,21 @@ a:active {
 }
 
 .primary-button,
-.secondary-button {
+.secondary-button,
+.primary-button-light {
     display: inline-block;
     padding: 12px 24px;
     text-decoration: none;
     font-weight: 600;
     margin-bottom: 10px;
     border-radius: 50px;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
 }
 
 .primary-button {
     background-color: var(--button);
     color: var(--text);
     border: 2px solid var(--button);
-    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
 }
 
 .primary-button:visited {
@@ -147,8 +150,32 @@ a:active {
     border-color: var(--button-active);
 }
 
+.primary-button-light {
+    background-color: var(--button-sec);
+    color: var(--text);
+    border: 2px solid var(--text);
+}
+
+.primary-button-light:visited {
+    background-color: var(--button-sec);
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.primary-button-light:hover,
+.primary-button-light:focus {
+    background-color: var(--button-sec-hover);
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.primary-button-light:active {
+    color: var(--button-sec-active);
+    border-color: var(--button-sec-active);
+}
+
 .secondary-button {
-    background-color: transparent;
+    background-color: var(--button-sec);
     color: var(--text);
     border: 2px solid var(--button);
 }
@@ -236,8 +263,8 @@ a.site-logo {
 .nav-list a:hover,
 .nav-list a:focus {
     background-color: var(--link-focus);
-    color: var(--redaction-black);
-    text-decoration: underline;
+    color: var(--link);
+    text-decoration: none;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
 }
@@ -245,6 +272,14 @@ a.site-logo {
 .nav-list a:focus {
     outline: 3px solid var(--link-focus);
     outline-offset: 3px;
+}
+
+.active-page {
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: underline;
+    pointer-events: none;
+    cursor: default;
 }
 
 .menu-btn {
@@ -303,7 +338,7 @@ a.site-logo {
 }
 
 .hero-container {
-    width: 100%;
+    width: 90%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -330,20 +365,25 @@ a.site-logo {
     border-radius: 30px;
 }
 
+.hero-video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 30px;
+}
+
 .hero h2 {
     font-size: 130%;
     font-style: italic;
     margin: 20px 0;
 }
 
-#about {
+#about,
+#specialties {
     display: block;
     padding: 60px 0;
 }
 
 #about div {
-    width: 100%;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -364,14 +404,38 @@ a.site-logo {
     order: 1;
 }
 
-#help {
+#specialties {
     background-color: var(--button-sec);
     padding: 60px 0;
+}
+
+#specialties ul {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 #contact {
     background-color: var(--button);
     padding: 60px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--text);
+    color: var(--white-text);
+    padding: 20px;
+    text-align: center;
+    font-size: 86%;
+}
+
+footer a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--link);
 }
 
 @media only screen and (min-width: 768px) {

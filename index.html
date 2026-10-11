@@ -8,7 +8,7 @@
     <meta name="description"
         content="Elaine Blum is a therapist who specializes in neurodiversity (especially ADHD and autism) and queer identities, based in Ann Arbor/Ypsilanti.">
 
-    <title>Elaine Blum | Neurodiversity &amp; Queer-Affirming Therapist | Ann Arbor</title>
+    <title>Elaine Blum | Neurodiversity- &amp; Queer-Affirming Therapist | Ann Arbor</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -28,9 +28,10 @@
                 <input type="checkbox" id="checkbox-toggle">
                 <label for="checkbox-toggle" class="menu-btn"><span class="sr-only">Open navigation menu</span></label>
                 <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="active-page" tabindex="-1" aria-current="page" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,71 +41,68 @@
         <section class="hero">
             <div class="container hero-container">
                 <div>
-                    <img src="images/Headshot2.jpg">
+                    <video class="hero-video" controls playsinline>
+                        <source src="video/ElaineVideoMobile.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div>
                     <h1>Neurodiversity &amp; Queer-Affirming Therapy</h1>
                     <h2>I want to learn your voice, your language, and help you amplify it.</h2>
-                    <a class="secondary-button" href="#about">Learn More</a>
-                    <a class="primary-button" href="#contact">Request a Consultation</a>
+                    <a class="secondary-button" href="services.html">Learn More</a>
+                    <a class="primary-button" href="contact.html">Request a Consultation</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="container">
-            <div>
-                <img clas="about-image" src="images/Elaine1.jpg">
-                <h2>Hi, I'm Elaine.</h2>
-                <p>I know how discouraging navigating mental health can be! Have you ever been told to not overthink
-                    things? Or that you intellectualize too much? Instead of framing those as barriers, I create space
-                    for engaging that thinking and leveraging it towards what you value. I want to learn your voice,
-                    your language, and help you amplify it.</p>
-                <p>My central commitment is to the LGBTQIA2S+ community. I specialize with intersections of queer and
-                    neurodiverse (autism, ADHD, etc.) identities. I also enjoy working with individuals on stress
-                    related to higher education (college, grad school). I help clients think through: anxiety and/or
-                    depression; clarifying/questioning identities such as gender and/or sexuality; academic stress
-                    (including graduate work!); navigating transitions; healing from religious trauma; and more.</p>
-                <p>In addition to a Masters of Social Work, I have a PhD in Philosophy with a focus on gender, queer
-                    theory, and trans theory. This means that I have a lot of conceptual tools at your disposal for
-                    engaging questions of identity, intersectionality, and how to negotiate conflicting social
-                    expectations and demands.</p>
-                <p>In my free time, I like to play board games (especially cooperative ones!), do crossword puzzles, and
-                    crochet.</p>
+        <section id="about">
+            <div class="container">
+                <img clas="about-image" src="images/ElaineByTree.JPG" alt="Elaine Blum, LLMSW, PhD">
+                <h2>Hi, I'm Elaine!</h2>
+                <p>I am a neurodiverse- and queer-affirming therapist that specializes in engaging where these things
+                    intersect (and where they don't!). In a previous life, I earned a PhD in philosophy, specializing in
+                    queer and trans theory.
+                    I pivoted to focus this knowledge towards more directly supporting LGBTQIA2S+ communities through
+                    mental health support. </p>
+                <p><a href="about.html">Learn more about me here!</a></p>
             </div>
         </section>
 
-        <section id="help">
+        <section id="specialties">
             <div class="container">
-                <h2>What would sessions with me be like?</h2>
-                <p>I find questioning with curiosity helpful in gaining deeper
-                    understanding into the meaning and reasoning behind our thoughts. Otherwise, I like to tailor my
-                    treatment approach to what you find edifying and practicable! I eclectically meld parts work,
-                    narrative therapy, queer/trans theory, feminist theory, and more. My goal is to be a resource for
-                    you, to help you celebrate the strengths and tools already within you, and to form a collaborative
-                    relationship to build upon them with you. I want to help you build confidence in your own voice!
-                    Bring all of you!</p>
+                <h2>How can I help you?</h2>
+                <p></p>
+                <ul>
+                    <li>Assessing for and supporting ADHD and/or Autism</li>
+                    <li>Gender-affirming care (including letter-writing)</li>
+                    <li>EMDR re-processing for trauma</li>
+                    <li>Unlearning ableist, neuro-normative, heteronormative, transphobic, and other oppressive
+                        narratives</li>
+                    <li>Balancing academic demands (perfectionism, job market stress, work/life balance)</li>
+                </ul>
+                <p>These are just a few of my specialties. <a href="services.html">Learn more about my services
+                        here!</a></p>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h2>Ready to see if we're a good fit?</h2>
-                <p>Fill out this short form, and I'll reach out within 48 business hours to schedule your free
-                    consultation!
+                <a class="primary-button-light" href="contact.html">Request a Consultation</a>
                 </p>
-                <div id="my-form"></div>
-                <script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        StaticForms.render(
-                            document.getElementById('my-form'),
-                            'sf_480914b7f1f297e44444f671'
-                        );
-                    });
-                </script>
+
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 Elaine Blum.<br>
+                Page designed and maintained by <a href="http://abyblumsudds.com">Aby Blum
+                    Sudds</a>.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
