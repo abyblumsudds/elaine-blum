@@ -366,9 +366,10 @@ a.site-logo {
 }
 
 .hero-video {
-    width: 100%;
+    width: auto;
     max-height: 500px;
     border-radius: 30px;
+    display: block;
 }
 
 .hero h2 {
