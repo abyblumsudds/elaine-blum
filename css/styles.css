@@ -405,6 +405,21 @@ video {
     display: block;
 }
 
+.info-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-video video {
+    width: min(100%, 760px);
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+}
+
 .hero h2 {
     font-size: 130%;
     font-style: italic;
