@@ -403,6 +403,10 @@ a.site-logo {
     overflow: hidden;
 }
 
+.hero-video {
+    object-fit: cover;
+}
+
 video {
     max-width: 100%;
     max-height: 500px;
