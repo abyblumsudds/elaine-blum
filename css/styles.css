@@ -401,6 +401,7 @@ a.site-logo {
 .hero-video-container {
     border-radius: 30px;
     overflow: hidden;
+    flex-shrink: 1;
 }
 
 .hero-video {
@@ -408,6 +409,8 @@ a.site-logo {
 }
 
 video {
+    width: 100%;
+    height: auto;
     max-height: 500px;
     border-radius: 30px;
     display: block;
