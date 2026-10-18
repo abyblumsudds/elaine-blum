@@ -482,14 +482,83 @@ video {
 }
 
 #specialties,
-#sessions,
 #approaches {
     background-color: var(--button-sec);
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 50px;
     margin-bottom: 20px;
+}
+
+/* Services Accordion */
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+details {
+    border-bottom: 1px solid var(--button);
+    transition: background-color 0.2s ease;
+}
+
+details:last-child {
+    border-bottom: none;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    font-weight: 600px;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:hover {
+    background-color: var(--button-sec);
+}
+
+summary::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--text);
+    border-bottom: 2px solid var(--text);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+details[open] {
+    background-color: var(--button-sec);
+}
+
+details[open] summary {
+    color: var(--text);
+}
+
+details[open] summary::after {
+    transform: rotate(-135deg);
+    border-color: var(--button);
+}
+
+.accordion-content {
+    padding: 0 24px 24px 24px;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .about-layout {
@@ -538,6 +607,15 @@ ul {
 
 .approach-card h4 {
     margin-bottom: 20px;
+}
+
+.why-image {
+    float: right;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 #contact {
@@ -599,6 +677,10 @@ footer a:focus {
     color: var(--link);
 }
 
+footer a:visited {
+    color: var(--white-text);
+}
+
 @media only screen and (min-width: 768px) {
 
     h1 {
@@ -640,7 +722,9 @@ footer a:focus {
     }
 
     #contact h2,
-    #sessions h3,
+    #contact h3,
+    #services h3,
+    #approaches h3,
     .subpage-head h2 {
         text-align: center;
     }
