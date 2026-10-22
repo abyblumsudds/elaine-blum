@@ -68,7 +68,6 @@ h6 {
 
 h1 {
     font-size: 2rem;
-    width: 100%;
     max-width: none;
     line-height: 1.05;
     letter-spacing: -0.02em;
@@ -523,7 +522,7 @@ details:last-child {
     border-bottom: none;
 }
 
-.accordion-summary {
+summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
